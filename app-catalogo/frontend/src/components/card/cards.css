@@ -1,0 +1,33 @@
+
+
+
+
+.Card{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 200px;
+   border-radius: 6px;
+    background-color: var(--background-sec);
+    color: var(--text-light);
+    cursor: pointer;
+  
+}
+
+
+.Boton{
+    display: flex;
+    justify-content: end;
+}
+
+.Card-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid var(--background);
+    color: var(--background);
+    background: none ;
+    cursor: pointer;
+}

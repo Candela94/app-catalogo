@@ -1,0 +1,23 @@
+
+.Main-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.Producto-img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.Boton{
+    background-color: var(--background-sec);
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
