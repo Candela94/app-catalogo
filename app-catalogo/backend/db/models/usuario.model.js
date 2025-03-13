@@ -18,6 +18,7 @@ const usuarioSchema = new mongoose.Schema({
     email: String,
     isAdmin: Boolean,
 
+    
     compras: [{
         type: mongoose.Schema.Types.ObjectId, ref: 'Compra'
     }]

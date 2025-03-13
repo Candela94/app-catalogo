@@ -1,14 +1,24 @@
+.Producto-img {
 
-
-
-
-
-.Producto-img{
-   
 
     height: 500px;
     object-fit: contain;
     border-radius: 6px;
 
 
+}
+
+
+
+.Botones {
+    width: 65%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.Informacion-producto{
+    background-color: white;
+    color: black;
 }

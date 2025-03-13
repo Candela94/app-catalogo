@@ -19,12 +19,11 @@ const productoSchema = new mongoose.Schema({
 
     nombre: String, 
     descripcion: String,
-    categoria: String,
+    imagen: String,
     precio: Number,
 
-    usuarios: [{
-        type: mongoose.Schema.Types.ObjectId, ref: 'Usuario'
-    }],
+    propietario: {
+        type: mongoose.Schema.Types.ObjectId, ref: 'Usuario' },  //mi campo usuario es obligatorio
 
     compras: [{
         type: mongoose.Schema.Types.ObjectId, ref: 'Compra'
