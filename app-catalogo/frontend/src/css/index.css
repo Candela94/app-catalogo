@@ -1,10 +1,10 @@
 
 :root{
-  --background:#f1f9e0;
-  --background-sec: #3F5744;
-  --primary:#FDC67E;
+  --background:#dde7c6;
+  --background-sec: #2B2E26;
+  --primary: #afc381;
 
-  --text-dark:#363A34;
+  --text-dark:#2B2E26;
   --text-light: #F5F5F5;
 
 }
@@ -44,5 +44,5 @@ a {
 .Main{
   margin: 1rem;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }

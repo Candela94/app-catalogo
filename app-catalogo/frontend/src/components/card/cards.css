@@ -9,25 +9,100 @@
     gap: 1rem;
     padding: 1rem;
     width: 200px;
-   border-radius: 6px;
+    border-radius: 6px;
     background-color: var(--background-sec);
     color: var(--text-light);
     cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
   
 }
 
-
-.Boton{
-    display: flex;
-    justify-content: end;
+.Card:active{
+    transform:scale(0.9)
 }
+
+
+.Card-imagen{
+    border-radius: 6px;
+}
+
+
 
 .Card-button{
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 1px solid var(--background);
-    color: var(--background);
-    background: none ;
+    border:none;
+    color: var(--text-light);
+    background-color: var(--primary) ;
     cursor: pointer;
+    position: absolute;
+    bottom: 64px;
+    right: 20px;
+}
+
+
+
+.Card-like{
+  
+    color: var(--text-dark);
+   background: none;
+   border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 28px;
+}
+
+.Card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--background);
+}
+
+
+
+
+
+/* Card carrito */
+
+.Card-carrito{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: rgb(201, 216, 198);
+    border-radius: 6px 0 0 6px;
+
+}
+
+.Img-info{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+
+.Carrito-imagen{
+    width: 80px;
+    border-radius: 6px;
+}
+
+
+
+.Info-cantidad{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   
+}
+
+.iconos{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }

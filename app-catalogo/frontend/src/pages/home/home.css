@@ -1,0 +1,14 @@
+
+
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+.Main-h2{
+    color: var(--text-dark);
+}

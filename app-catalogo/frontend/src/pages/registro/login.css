@@ -1,0 +1,10 @@
+
+
+.Main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    width: 100%;
+    gap: 1.5rem;
+}

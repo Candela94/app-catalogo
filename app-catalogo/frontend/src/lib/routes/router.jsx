@@ -7,6 +7,7 @@ import Perfil from "../../pages/perfil/Perfil";
 import Producto from "../../pages/producto/Producto";
 import Error from '../../pages/error/Error';
 import Carrito from '../../pages/carrito/Carrito';
+import LogIn from '../../pages/registro/LogIn';
 import Layout from '../../Layout';
 
 
@@ -31,11 +32,15 @@ const router = createBrowserRouter([{
 
 
         {
-            path:"/perfil",
+            path:"/registro",
             element:<Perfil /> ,
         },
 
 
+        {
+            path:"/login",
+            element:<LogIn /> ,
+        },
 
 
      

@@ -13,7 +13,7 @@ const Producto = () => {
 
   
 <main className="Main-producto">
-        <img src="." alt="producto" className="Producto-img" />
+        <img src="../../public/img/default.png" alt="producto" className="Producto-img" />
         <Boton>Comprar</Boton>
 
         </main>

@@ -5,6 +5,10 @@
 
 .Producto-img{
    
-    height: 300px;
-    background-color: var(--background-sec);
+
+    height: 500px;
+    object-fit: contain;
+    border-radius: 6px;
+
+
 }

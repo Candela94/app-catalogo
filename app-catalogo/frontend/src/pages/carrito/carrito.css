@@ -1,0 +1,12 @@
+
+
+
+.Info-precio{
+    position: fixed;
+    bottom: 130px;
+    right: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}

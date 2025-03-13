@@ -14,7 +14,7 @@ export const BottomNav = () => {
 
                 <nav className="Footer-nav">
                     <ul className="Footer-ul">
-                        <NavLink to='/perfil'><li className="Footer-li"><AiOutlineUser className='Footer-icons' /></li></NavLink>
+                        <NavLink to='/registro'><li className="Footer-li"><AiOutlineUser className='Footer-icons' /></li></NavLink>
                        <NavLink to='/'> <li className="Footer-li"><TbPlant2 className='Footer-logo'/></li></NavLink>
                         <NavLink to='/carrito'><li className="Footer-li"><FaCartShopping className='Footer-icons' /></li></NavLink>
                     </ul>
