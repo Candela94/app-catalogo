@@ -8,23 +8,11 @@ import { BottomNav } from './components/bottomNav/BottomNav'
 function Layout() {
 
 
-  const obtenerDatos = async () => {
-    const response = await fetch('http://localhost:3000/api/v1');
-    const data = response.json()
-
-
-    
-  }
-
-
-  useEffect(() => {
-    obtenerDatos()
-  })
-
 
   return (
     <>
     <Header />
+   
      <Outlet />
      <BottomNav />
     </>

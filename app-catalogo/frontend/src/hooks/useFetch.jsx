@@ -1,11 +1,13 @@
 
-import { useEffect,useState} from "react";
+import { useEffect, useState } from "react";
 
 
 
 export const useGet = () => {
 
-    const [datos, setDatos ] = useState([])
+    const { VITE_URL } = import.meta.env
+
+    const [datos, setDatos] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
 
@@ -13,23 +15,27 @@ export const useGet = () => {
         const fetchData = async () => {
             setLoading(true);
 
-            try{
+            try {
+                let options = {
+                    method: 'GET'
+                }
+                const response = await fetch(VITE_URL)
 
-                
 
-            }catch(e) {
+
+            } catch (e) {
                 console.error('Error al cargar los datos', e)
             }
         }
     })
-   
 
-    return ( 
+
+    return (
         <>
-        
 
 
-        
+
+
         </>
-     );
+    );
 }
