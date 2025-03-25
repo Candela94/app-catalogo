@@ -3,9 +3,23 @@ import { NavLink } from "react-router";
 import { Card } from "../../components/card/Cards";
 import './home.css'
 import { TbPlant2 } from "react-icons/tb";
+import { useFetch } from "../../hooks/useFetch";
 
 const Home = () => {
-    return ( 
+
+    const {datos,loading,error} = useFetch()
+
+    if(loading) {
+        return <p>Cargando datos</p>
+    
+    }
+
+    if(error) {
+        return <p>{error}</p>
+    }
+
+    return (
+        
     
     
     <>
@@ -18,7 +32,19 @@ const Home = () => {
 
         <h2 className="Main-h2">Nuestro catálogo</h2>
 
-        <NavLink to='/producto'><Card /></NavLink>
+            <div className="Catalogo-productos">
+                {datos.length > 0 ? (
+                    datos.map((producto) => (
+                        <Card 
+                        key={producto._id}
+                        nombre={producto.nombre}
+                        precio={producto.precio}/>
+                    ))
+                ) : (
+                    <p>No hay productos disponibles</p>
+                )}
+            </div>
+       
         </main>
     </>
     

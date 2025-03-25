@@ -20,7 +20,7 @@ export const Card = ({ nombre, precio }) => {
             <div className="Card">
 
                 <FaRegHeart className='Card-like' />
-                <img src="../../public/img/default.png" alt="planta" className="Card-imagen" />
+                <img src="/img/default.png" alt="planta" className="Card-imagen" />
 
                 <div className="Card-info">
                     <h3>Nombre {nombre}</h3>
