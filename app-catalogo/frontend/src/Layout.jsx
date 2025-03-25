@@ -5,6 +5,8 @@ import { Outlet } from 'react-router'
 import {Header} from './components/header/Header'
 import { BottomNav } from './components/bottomNav/BottomNav'
 
+import Formulario from './pages/formulario/Form'
+
 function Layout() {
 
 
@@ -13,7 +15,8 @@ function Layout() {
     <>
     <Header />
    
-     <Outlet />
+     {/* <Outlet /> */}
+     <Formulario />
      <BottomNav />
     </>
   )
