@@ -4,23 +4,53 @@ import { Card } from "../../components/card/Cards";
 import './home.css'
 import { TbPlant2 } from "react-icons/tb";
 import { useFetch } from "../../hooks/useFetch";
+import { useState, useEffect } from "react";
 
 const Home = () => {
 
-    const {datos,loading,error} = useFetch()
+    const  VITE_URL  = import.meta.env.VITE_URL
 
-    if(loading) {
-        return <p>Cargando datos</p>
-    
-    }
+    const [datos, setDatos] = useState([])
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState('')
 
-    if(error) {
-        return <p>{error}</p>
-    }
+    useEffect(() => {
+        const fetchData = async () => {
+       
 
-    return (
+            try {
+
+                const response = await fetch(`${VITE_URL}/api/v1/productos`, {
+                    method:'GET',
+                    headers: {
+                        'Content-Type':'application/json'
+                
+                    },
+                });
+
+                if(!response.ok) {
+                    const data = await response.json();
+                    setDatos(data);
+                } else {
+                    throw new Error('No se pudo obtener los datos')
+                }
+             
+
+
+            } catch (e) {
+                console.error('Error al cargar los datos', e)
+
+
+            } finally {
+                setLoading(false)
+            }
+
+            fetchData();
+        }
+    },[])
+
         
-    
+    return(
     
     <>
         <main className="Main">

@@ -1,0 +1,27 @@
+.Formu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 70%;   
+}
+
+.Input{
+    border: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+
+}
+
+.button{
+    background-color: var(--primary);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+
+label{
+    font-weight: bold;
+}

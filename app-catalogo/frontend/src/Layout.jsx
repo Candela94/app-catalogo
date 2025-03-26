@@ -15,8 +15,8 @@ function Layout() {
     <>
     <Header />
    
-     {/* <Outlet /> */}
-     <Formulario />
+     <Outlet />
+     {/* <Formulario /> */}
      <BottomNav />
     </>
   )

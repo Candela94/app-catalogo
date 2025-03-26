@@ -1,7 +1,7 @@
 
 
 import { useState } from "react"
-
+import './form.css'
 
 const Formulario = () => {
 
@@ -112,17 +112,17 @@ const Formulario = () => {
     return (
         <>
 
+
+
+            <form className="Formu" onSubmit={handleSubmit}>
             <h1>Formulario para editar producto: {formData.title}</h1>
             <div>
                 {/* vista prevua de la imagen */}
                 <img src={imageUrl} alt={formData.title} />
             </div>
 
-
-            <form onSubmit={handleSubmit}>
-
                 <label htmlFor="title-input">Nombre</label>
-                <input type="text"
+                <input className="Input" type="text"
                     value={formData.nombre}
                     onChange={e => setFormData({ ...formData, nombre: e.target.value })}
                     id="title-input" />
@@ -131,7 +131,7 @@ const Formulario = () => {
 
 
                 <label htmlFor="title-input">Precio</label>
-                <input type="number"
+                <input  className="Input" type="number"
                     value={formData.precio}
                     onChange={e => setFormData({ ...formData, precio: e.target.value })}
                     id="title-input" />
@@ -141,10 +141,10 @@ const Formulario = () => {
 
 
                 <label htmlFor="image-input">Imagen</label>
-                <input type="file" id="image-input" accept="image/*" onChange={handleImageUpload} />
+                <input className="Input" type="file" id="image-input" accept="image/*" onChange={handleImageUpload} />
 
 
-                <button type="submit">Enviar</button>
+                <button className="button" type="submit">Enviar</button>
             </form>
 
         </>
